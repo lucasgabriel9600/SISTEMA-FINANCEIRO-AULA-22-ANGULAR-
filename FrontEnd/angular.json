@@ -51,6 +51,27 @@
               ],
               "outputHashing": "all"
             },
+            "dev": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "10mb",
+                  "maximumError": "10mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "10mb",
+                  "maximumError": "10mb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environment.ts",
+                  "with": "src/environment.dev.ts"
+                }
+              ],
+              "outputHashing": "all"           
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
